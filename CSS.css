@@ -1,0 +1,276 @@
+body { background-color:#CEEDDB;
+}
+ 
+
+nav {
+    background:#A9D1D1; /* Set background to transparent */
+    border: 1px solid;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center; /* Center the contents horizontally */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 30;
+    display: inline-block; /* Ensure the ul stays inline-block for centering */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items inline-block */
+    margin-right: 20px; /* Add margin between list items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last list item */
+}
+
+nav ul li a {
+    color: white; font-size: 20px;text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+    text-decoration: none;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1px;
+}
+
+
+h1, h2, h3, p {
+    color: #000080; /* Deep Navy Blue */
+}
+p { font-size: 16px;}
+
+
+
+
+.email-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+.email-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-family: 'Oswald', sans-serif; /* Button font */
+}
+
+.email-button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+
+ a {
+    color: blue; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+  }
+
+  /* Hover effect */
+  a:hover {
+    color:blue; /* Change text color on hover */
+  }	   
+
+footer {
+    background:#A9D1D1  ;
+    text-align: center;
+    padding: 3px;
+    position:relative ; /* Change to fixed */
+    bottom: 0;
+    width: 100%;
+}
+#myfooter { 
+    background:#A9D1D1  ;
+    text-align: center;
+    padding: 3px;
+    position:fixed ; /* Change to fixed */
+    bottom: 0;
+width: 100%;}
+
+
+
+.round-image {border-radius:20px;border:3px solid #000;}
+
+
+
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.page-header {
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  background: var(--gradient-16);
+  color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+}
+
+.page-title {
+  font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
+  
+}
+
+/* CSS block 1 */
+.pn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-left,
+.photo-right,
+.video-middle {
+    flex: 1;
+}
+
+.photo-left img,
+.photo-right img {
+    width: 100%;
+    height: auto;
+}
+
+.video-middle {
+    margin: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .pn {
+        flex-direction: column;
+    }
+    
+    .photo-left,
+    .photo-right,
+    .video-middle {
+        width:auto;
+    }
+}
+
+/* CSS block 2 - Renamed selectors to avoid conflicts */
+/* CSS.css */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column2,
+.middle-column2,
+.right-column2 {
+    padding: 10px;
+}
+
+.left-column2 img,
+.middle-column2 img {
+    max-width:500px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right-column2 .description2 {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+
+/* Style for the left container */
+.left-container3 {
+    float: left; /* Float the left container to the left */
+    width: 50%; /* Set the width of the left container */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Style for the right container */
+.right-container3 {
+    float: right; /* Float the right container to the right */
+    width: 50%; /* Set the width of the right container */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Clear floating elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
